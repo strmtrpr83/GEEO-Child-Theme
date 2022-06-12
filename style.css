@@ -1,0 +1,112 @@
+/*
+ Theme Name:   GEEO Child Theme
+ Theme URI:    https://github.com/strmtrpr83/GEEO-Child-Theme
+ Description:  A child theme for the Center for Global Econoic and Environmental Opportunity at UCF, based on the UCF Colleges Theme
+ Author:       Jonathan Hendricker
+ Template:     Colleges-Theme
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  geeochildtheme
+*/
+
+/* Background Colors */
+.geeo-bg-dark-blue {
+	background-color: #0049af;
+}
+.geeo-bg-blue {
+	background-color: #3694ec;
+}
+.geeo-bg-light-blue {
+	background-color: #8ed1fc;
+}
+.geeo-bg-light-gray {
+    background-color: #eef1f8;
+}
+.geeo-bg-gray {
+	background-color: #e6e9f0;
+}
+.geeo-bg-dark-gray {
+    background-color: #3e3e3e;
+}
+
+/* Header and Text Colors */
+.geeo-header-gray, h2 {
+    color: #3e3e3e;
+}
+.geeo-header-dark-gray, h4 {
+    color: #1b1b1b;
+}
+.geoo-header-blue, h3 {
+    color: #0074d7;
+}
+.geeo-gold-txt {
+    color: #ffc904;
+}
+.geeo-link {
+    color: #0f91f1;
+}
+
+/* Button Colors */
+.geeo-btn-gray {
+    background-color: #99999b;
+    color: #ffffff;
+}
+.geeo-btn-gray:hover {
+    background-color: #777778;
+    color: #ffffff;
+}
+
+/* SDG Colors */
+.geeo-sdg-1 {
+    background-color: #e5233b;
+}
+.geeo-sdg-2 {
+    background-color: #dea62b;
+}
+.geeo-sdg-3 {
+    background-color: #4b9f30;
+}
+.geeo-sdg-4 {
+    background-color: #c5172e;
+}
+.geeo-sdg-5 {
+    background-color: #ff3b21;
+}
+.geeo-sdg-6 {
+    background-color: #27bde2;
+}
+.geeo-sdg-7 {
+    background-color: #fec400;
+}
+.geeo-sdg-8 {
+    background-color: #a21540;
+}
+.geeo-sdg-9 {
+    background-color: #ff670d;
+}
+.geeo-sdg-10 {
+    background-color: #de0465;
+}
+.geeo-sdg-11 {
+    background-color: #fd9f23;
+}
+.geeo-sdg-12 {
+    background-color: #c08c1f;
+}
+.geeo-sdg-13 {
+    background-color: #3f7e45;
+}
+.geeo-sdg-14 {
+    background-color: #0998da;
+}
+.geeo-sdg-15 {
+    background-color: #56c02a;
+}
+.geeo-sdg-16 {
+    background-color: #00689d;
+}
+.geeo-sdg-17 {
+    background-color: #1a486a;
+}
