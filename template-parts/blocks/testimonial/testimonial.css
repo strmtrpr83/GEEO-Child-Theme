@@ -1,0 +1,32 @@
+.geeo-testimonial-wrapper {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+/* Set Max Width for Gutenberg Editor */
+html :where(.wp-block) .geeo-testimonial-wrapper,
+html :where(.wp-block) .geeo-full-width-wrapper {
+    max-width: 840px;
+}
+.testimonial {
+    background: #00e4ba;
+    color: #fff;
+}
+.geeo-testimonial-text-block {
+    padding: 2.375em;
+}
+.geeo-testimonial-text-block h5 {
+    margin-bottom: 0.25em;
+}
+.geeo-testimonial-text-block h6 {
+    margin-top: 0.25em;
+}
+.testimonial-author, .testimonial-role {
+    display: block;
+    text-align: right;
+}
+.testimonial-author {
+    margin-top: 1em;
+}
+.testimonial-image.wp-block-image {
+    margin-bottom: 0;
+}

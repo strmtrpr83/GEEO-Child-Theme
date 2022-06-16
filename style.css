@@ -11,38 +11,195 @@
  Text Domain:  geeochildtheme
 */
 
+/* Color Variables */
+:root {
+    --dark-blue: #0049af;
+    --blue: #3694ec;
+    --bright-blue: #05B1FC;
+    --light-blue: #82befa;
+    --sky-blue: #bae3ff;
+    --dark-gray: #1b1b1b;
+    --gray: #3e3e3e;
+    --light-gray: #e6e9f0;
+    --dark-gold: #cca300;
+    --gold: #ffc904;
+}
+
+/* Wide or Full Width Gutenberg Blocks */
+.alignwide,
+.alignfull {
+	margin: 32px calc(50% - 50vw) 0 calc(50% - 50vw);
+	max-width: 100vw;
+	width: 100vw;
+}
+@media (max-width: 920px) {
+	.alignwide {
+		margin: 32px -76px;
+		max-width: 920px;
+		width: 920px;
+	}
+}
+/* Block Groups */
+.wp-block-group__inner-container .wp-block-image {
+    margin-bottom: 0;
+}
+
+
+/* Container Styling and Overrides */
+#main .container {
+    margin-bottom:0 !important;
+}
+.container {
+    width: 100%;
+}
+@media (min-width: 1140px){
+    .container {
+        width: 1140px;
+    }
+}
+.wp-block-separator {
+    border-bottom: 0;
+}
+
+/* Custom GEEO Wrappers */
+.geeo-full-width-wrapper {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+.wp-block-group__inner-container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 2em 2em 0.75em 2em;
+}
+@media (min-width: 1110px) {
+    .wp-block-group__inner-container {
+        padding: 2em 0;
+    }
+}
+.geeo-cta-full-height .wp-block-group__inner-container {
+    padding: 0;
+}
+.geeo-cta-full-height {
+    margin-top: 0;
+}
+.publish.post-list-item > .geeo-cta-full-height {
+    margin-top: -48px;
+}
+.geeo-cta-text {
+    padding-top: 2em;
+}
+
+/* Gravity Forms */
+.gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type=submit] {
+	border-radius: 0;
+	padding: 10px;
+	border:	none;
+    color: white;
+    background-color: var(--gray);
+}
+.gform_wrapper .gform_footer input.button:hover, .gform_wrapper .gform_footer input[type=submit]:hover {
+    background-color: var(--dark-gray);
+}
+
+/* Site Header Styling */
+.no-header-image .wp-block-columns .wp-block-column:first-of-type,
+.no-header-image .wp-block-columns .wp-block-column .geeo-extra-content-bottom {
+    position: relative;
+}
+@media (min-width: 790px) {
+    .no-header-image .wp-block-columns .wp-block-column .geeo-extra-content-bottom {
+        position: absolute;
+        bottom: 2em;
+    }
+}
+.header-side-image {
+    min-height: 400px;
+    width: 100%;
+    background-size: contain !important;
+}
+.geeo-extra-content h2,
+.geeo-extra-content h3,
+.geeo-extra-content h4 {
+    color: var(--sky-blue);
+}
+.geeo-extra-content p {
+    color: #ffffff;
+}
+
+/* Site Footer Styling */
+.site-footer.bg-inverse {
+    background-color: var(--gray) !important;
+}
+
+/* Sections Menu Mods */
+.no-header-image {
+    margin-bottom: 0
+}
+.site-main > .container > .post-list-item > .section-menu-group {
+    margin-top: -16px;
+}
+.section-menu-group {
+    margin-top:0;
+    margin-bottom: 32px;
+}
+.section-menu-group .wp-block-group__inner-container {
+    padding: 0;
+}
+@media (min-width: 990px) {
+    .site-main > .container > .post-list-item > .section-menu-group {
+        margin-top: -48px;
+    }
+    .section-menu-group .wp-block-group__inner-container .sections-menu-wrapper .navbar {
+        padding: 0;
+    }
+}
+
+/* Footer Styling */
+.site-footer.bg-inverse {
+    background-color: var(--gray);
+}
+
 /* Background Colors */
-.geeo-bg-dark-blue {
-	background-color: #0049af;
+.jumbotron {
+    background-color: transparent;
 }
-.geeo-bg-blue {
-	background-color: #3694ec;
+.geeo-bg-dark-blue,
+.jumbotron.geeo-bg-dark-blue {
+	background-color: var(--dark-blue);
 }
-.geeo-bg-light-blue {
-	background-color: #8ed1fc;
+.geeo-bg-blue,
+.jumbotron.geeo-bg-blue {
+	background-color: var(--blue);
 }
-.geeo-bg-light-gray {
+.geeo-bg-light-blue,
+.jumbotron.geeo-bg-light-blue {
+	background-color: var(--light-blue);
+}
+.geeo-bg-light-gray,
+.jumbotron.geeo-bg-light-gray {
     background-color: #eef1f8;
 }
-.geeo-bg-gray {
+.geeo-bg-gray,
+.jumbotron.geeo-bg-gray {
 	background-color: #e6e9f0;
 }
-.geeo-bg-dark-gray {
-    background-color: #3e3e3e;
+.geeo-bg-dark-gray,
+.jumbotron.geeo-bg-dark-gray {
+    background-color: var(--gray);
 }
 
 /* Header and Text Colors */
 .geeo-header-gray, h2 {
-    color: #3e3e3e;
+    color: var(--gray);
 }
 .geeo-header-dark-gray, h4 {
-    color: #1b1b1b;
+    color: var(--dark-gray);
 }
 .geoo-header-blue, h3 {
     color: #0074d7;
 }
 .geeo-gold-txt {
-    color: #ffc904;
+    color: var(--gold);
 }
 .geeo-link {
     color: #0f91f1;
@@ -109,4 +266,78 @@
 }
 .geeo-sdg-17 {
     background-color: #1a486a;
+}
+
+/* Custom Gutenberg Color Palette */
+/* Blues */
+.has-dark-blue-background-color { background-color: var(--dark-blue); }
+.has-dark-blue-color { color: var(--dark-blue); }
+.has-blue-background-color { background-color: var(--blue); }
+.has-blue-color { color: var(--blue); }
+.has-bright-blue-background-color { background-color: var(--bright-blue); }
+.has-bright-blue-color { color: var(--bright-blue); }
+.has-light-blue-background-color { background-color: #8ed1fc; }
+.has-light-blue-color { color: #8ed1fc; }
+.has-sky-blue-background-color { background-color: var(--sky-blue); }
+.has-sky-blue-color { color: var(--sky-blue); }
+/* Grays */
+.has-dark-gray-background-color { background-color: var(--dark-gray); }
+.has-dark-gray-color { color: var(--dark-gray); }
+.has-gray-background-color { background-color: var(--gray); }
+.has-gray-color { color: var(--gray); }
+.has-light-gray-background-color { background-color: var(--light-gray); }
+.has-light-gray-color { color: var(--light-gray); }
+/* Gold */
+.has-dark-gold-background-color { background-color: var(--dark-gold); }
+.has-dark-gold-color { color: var(--dark-gold); }
+.has-gold-background-color { background-color: var(--gold); }
+.has-gold-color { color: var(--gold); }
+
+/* Site Navbar Styling */
+.site-navbar {
+	background-color: #ffffff;
+}
+.navbar-inverse .navbar-brand, 
+.navbar-inverse .navbar-toggler,
+.navbar-inverse .navbar-brand:hover, 
+.navbar-inverse .navbar-toggler:hover,
+.navbar-inverse .navbar-nav .nav-link,
+.navbar-toggleable-md.navbar-inverse .navbar-nav .dropdown-item {
+	color: var(--gray);
+}
+.navbar-inverse .navbar-nav .nav-link:hover,
+ .navbar-inverse .navbar-nav .show>.nav-link,
+.navbar-toggleable-md.navbar-inverse .navbar-nav .dropdown-item:hover
+{
+	background-color: var(--dark-blue);
+	color: #ffffff;
+}
+.navbar-inverse .navbar-nav .dropdown-toggle::after {
+	border-top-color: var(--gray);
+}
+.navbar-inverse .navbar-nav .dropdown-toggle:hover::after {
+	border-top-color: #ffffff;
+}
+.navbar-inverse .navbar-brand{
+	font-size: 1.25rem;
+	max-width: 400px;
+	white-space: normal;
+}
+.navbar-inverse .navbar-toggler,
+.navbar-inverse .navbar-toggler:not(.collapsed),
+.navbar-inverse .navbar-toggler:not(.collapsed) .navbar-toggler-icon{
+	background-color: var(--dark-blue);
+}
+.navbar-inverse .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* Headers */
+h2,h3,h4,h5,h6 {
+	text-transform: none;
+	letter-spacing: 0;
+	margin-bottom: 1.25rem;
+}
+h2 {
+	color: var(--gray);
 }
