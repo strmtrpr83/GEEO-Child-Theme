@@ -52,9 +52,9 @@
 .container {
     width: 100%;
 }
-@media (min-width: 1140px){
+@media (min-width: 1200px){
     .container {
-        width: 1140px;
+        width: 1400px;
     }
 }
 .wp-block-separator {
@@ -67,11 +67,11 @@
     margin: 0 auto;
 }
 .wp-block-group__inner-container {
-    max-width: 1110px;
+    max-width: 1370px;
     margin: 0 auto;
     padding: 2em 2em 0.75em 2em;
 }
-@media (min-width: 1110px) {
+@media (min-width: 1370px) {
     .wp-block-group__inner-container {
         padding: 2em 0;
     }
@@ -79,12 +79,15 @@
 .geeo-cta-full-height .wp-block-group__inner-container {
     padding: 0;
 }
+
 .geeo-cta-full-height {
     margin-top: 0;
 }
+/* 
 .publish.post-list-item > .geeo-cta-full-height {
     margin-top: -48px;
 }
+*/
 .geeo-cta-text {
     padding-top: 2em;
 }
@@ -102,6 +105,9 @@
 }
 
 /* Site Header Styling */
+.site-header .jumbotron {
+    padding-bottom: 2rem;
+}
 .no-header-image .wp-block-columns .wp-block-column:first-of-type,
 .no-header-image .wp-block-columns .wp-block-column .geeo-extra-content-bottom {
     position: relative;
@@ -121,6 +127,12 @@
 .geeo-extra-content h3,
 .geeo-extra-content h4 {
     color: var(--sky-blue);
+}
+.geeo-extra-content h2 {
+    font-size: 2.25rem;
+}
+.geeo-extra-content h2+p {
+    margin-top: -1.25rem;
 }
 .geeo-extra-content p {
     color: #ffffff;
@@ -152,11 +164,6 @@
     .section-menu-group .wp-block-group__inner-container .sections-menu-wrapper .navbar {
         padding: 0;
     }
-}
-
-/* Footer Styling */
-.site-footer.bg-inverse {
-    background-color: var(--gray);
 }
 
 /* Background Colors */
@@ -206,66 +213,160 @@
 }
 
 /* Button Colors */
-.geeo-btn-gray {
+.geeo-btn-gray,
+.wp-block-button__link,
+.btn-primary  {
     background-color: #99999b;
+    border-color: #99999b;
     color: #ffffff;
 }
-.geeo-btn-gray:hover {
-    background-color: #777778;
+.geeo-btn-gray:hover,
+.wp-block-button__link:hover,
+.btn-primary:hover,
+.btn-primary:active:not(:disabled):not(.disabled),
+.btn-primary:hover:not(:disabled):not(.disabled) {
+    background-color: var(--gray);
+    border-color: var(--gray);
     color: #ffffff;
+}
+.btn {
+    text-transform: capitalize;
 }
 
 /* SDG Colors */
+.geeo-sdgs-container {
+    display: flex;
+    margin-top: 0.25em;
+}
+span.sdg-list-title {
+    font-size: 0.75rem;
+    margin-top: 0.35em;
+}
+.geeo-sdgs-ul {
+    padding-left: 0.25em;
+}
+.geeo-sdgs-ul li {
+    list-style-type: none;
+    display: inline-flex;
+    margin-bottom: 0.25em;
+}
+.colleges-post-list-people .geeo-sdgs-ul li {
+    margin-bottom: 0.125em;
+}
+.colleges-post-list-people .geeo-sdg {
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.65em;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    min-width: 18px;
+    min-height: 18px;
+}
+.geeo-sdg-icon {
+    max-width: 76px;
+    max-height: 76px;
+}
 .geeo-sdg-1 {
     background-color: #e5233b;
+}
+.colleges-post-list-people .geeo-sdg-1::before {
+    content: "1";
 }
 .geeo-sdg-2 {
     background-color: #dea62b;
 }
+.colleges-post-list-people .geeo-sdg-2::before {
+    content: "2";
+}
 .geeo-sdg-3 {
     background-color: #4b9f30;
+}
+.colleges-post-list-people .geeo-sdg-3::before {
+    content: "3";
 }
 .geeo-sdg-4 {
     background-color: #c5172e;
 }
+.colleges-post-list-people .geeo-sdg-4::before {
+    content: "4";
+}
 .geeo-sdg-5 {
     background-color: #ff3b21;
+}
+.colleges-post-list-people .geeo-sdg-5::before {
+    content: "5";
 }
 .geeo-sdg-6 {
     background-color: #27bde2;
 }
+.colleges-post-list-people .geeo-sdg-6::before {
+    content: "6";
+}
 .geeo-sdg-7 {
     background-color: #fec400;
+}
+.colleges-post-list-people .geeo-sdg-7::before {
+    content: "7";
 }
 .geeo-sdg-8 {
     background-color: #a21540;
 }
+.colleges-post-list-people .geeo-sdg-8::before {
+    content: "8";
+}
 .geeo-sdg-9 {
     background-color: #ff670d;
+}
+.colleges-post-list-people .geeo-sdg-9::before {
+    content: "9";
 }
 .geeo-sdg-10 {
     background-color: #de0465;
 }
+.colleges-post-list-people .geeo-sdg-10::before {
+    content: "10";
+}
 .geeo-sdg-11 {
     background-color: #fd9f23;
+}
+.colleges-post-list-people .geeo-sdg-11::before {
+    content: "11";
 }
 .geeo-sdg-12 {
     background-color: #c08c1f;
 }
+.colleges-post-list-people .geeo-sdg-12::before {
+    content: "12";
+}
 .geeo-sdg-13 {
     background-color: #3f7e45;
+}
+.colleges-post-list-people .geeo-sdg-13::before {
+    content: "13";
 }
 .geeo-sdg-14 {
     background-color: #0998da;
 }
+.colleges-post-list-people .geeo-sdg-14::before {
+    content: "14";
+}
 .geeo-sdg-15 {
     background-color: #56c02a;
+}
+.colleges-post-list-people .geeo-sdg-15::before {
+    content: "15";
 }
 .geeo-sdg-16 {
     background-color: #00689d;
 }
+.colleges-post-list-people .geeo-sdg-16::before {
+    content: "16";
+}
 .geeo-sdg-17 {
     background-color: #1a486a;
+}
+.colleges-post-list-people .geeo-sdg-17::before {
+    content: "17";
 }
 
 /* Custom Gutenberg Color Palette */
@@ -325,11 +426,20 @@
 }
 .navbar-inverse .navbar-toggler,
 .navbar-inverse .navbar-toggler:not(.collapsed),
-.navbar-inverse .navbar-toggler:not(.collapsed) .navbar-toggler-icon{
+.navbar-inverse .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
 	background-color: var(--dark-blue);
 }
 .navbar-inverse .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-toggleable-md.navbar-inverse .navbar-nav .dropdown-item.active {
+	background-color: var(--dark-blue);
+    color: #ffffff;
+}
+
+/* Section Menu Styling */
+.section-menu-group .wp-block-group__inner-container .sections-menu-wrapper .navbar.bg-primary {
+    background-color: transparent !important;
 }
 
 /* Headers */
@@ -340,4 +450,36 @@ h2,h3,h4,h5,h6 {
 }
 h2 {
 	color: var(--gray);
+}
+
+/* Page Title & Subtitle */
+
+
+/* People/Person CPT */
+.person-content {
+    height: 100%;
+    overflow-y: hidden;
+    padding-bottom: 2.5em;
+}
+.person-subheading {
+    text-transform: none;
+}
+.person-photo {
+    margin-right: 1em !important;
+    border: 1px solid #eeeeee;
+}
+.person-contact-container h5 {
+    font-weight: 400;
+    font-size: 1.15em;
+}
+@media (min-width: 990px){
+    .colleges-post-list-people .person-name{
+        font-size: 1rem;
+    }
+}
+.geeo-contact-info-block {
+    margin-bottom: 1.25em;
+}
+.geeo-sdgs h5 {
+    margin-bottom: 0.5em;
 }

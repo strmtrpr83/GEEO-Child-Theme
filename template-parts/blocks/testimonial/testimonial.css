@@ -1,5 +1,5 @@
 .geeo-testimonial-wrapper {
-    max-width: 1110px;
+    max-width: 1370px;
     margin: 0 auto;
 }
 /* Set Max Width for Gutenberg Editor */
@@ -12,7 +12,7 @@ html :where(.wp-block) .geeo-full-width-wrapper {
     color: #fff;
 }
 .geeo-testimonial-text-block {
-    padding: 2.375em;
+    padding: 2.375em 2.375em 2.375em 0;
 }
 .geeo-testimonial-text-block h5 {
     margin-bottom: 0.25em;
